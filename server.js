@@ -72,7 +72,7 @@ app.put('/userlist/:id', function (req, res) {
 });
 
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 app.on('stormpath.ready', function () {
   console.log('Server running on port 3000. Stormpath Ready!');
 });
