@@ -22,6 +22,10 @@ app.use(stormpath.init(app, {
   website: true
 }));
 
+// app.get('/', function (req, res) {
+//   res.render('landing');
+// });
+
 app.get('/userlist', function (req, res) {
   console.log('I received a GET request');
 

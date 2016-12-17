@@ -19,7 +19,7 @@
 </nav>
 
   <div class="container" ng-controller="AppCtrl">
-    <img id="mainLogo" src="https://lh4.ggpht.com/orpV8u7Xf0SzS8PxBXv7fcb0ZPGHLmAgNTHw6ThxyOxNu-DifgVLDQxdpfmYZssJB_k=h900">
+    <img id="mainLogo" src="http://dutchfishingadventures.com/wp-content/uploads/2012/01/guestbook-sign.gif">
 
     <table class="table">
       <thead>
@@ -32,19 +32,19 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+<!--         <tr>
           <td><input class="form-control" ng-model="user.name"></td>
           <td><input class="form-control" ng-model="user.email"></td>
           <td><input class="form-control" ng-model="user.message"></td>
           <td><button class="btn btn-primary" ng-click="addUser()">Add</button></td>
           <td><button class="btn btn-success" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="btn btn-default" ng-click="deselect()">Clear</button></td>
-        </tr>
+        </tr> -->
         <tr ng-repeat="user in userlist">
           <td>{{user.name}}</td>
           <td>{{user.email}}</td>
           <td>{{user.message}}</td>
-          <td><button class="btn btn-danger" ng-click="remove(user._id)">Remove</button></td>
-          <td><button class="btn btn-warning" ng-click="edit(user._id)">Edit</button></td>
+          <!-- <td><button class="btn btn-danger" ng-click="remove(user._id)">Remove</button></td>
+          <td><button class="btn btn-warning" ng-click="edit(user._id)">Edit</button></td> -->
         </tr>
       </tbody>
     </table>

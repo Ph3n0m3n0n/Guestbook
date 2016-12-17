@@ -41,8 +41,9 @@ a {
 }
 #mainLogo {
 	float: right;
-	height: 200px;
-	width: 75%;
+  width: 25%;
+  height: 200px;
+  margin-right: 200px;
 }
 
 #brandImg {
