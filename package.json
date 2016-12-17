@@ -1,5 +1,5 @@
 {
-  "name": "contactlistapp",
+  "name": "the-guestbook",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -18,12 +18,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaelcheng429/meanstacktutorial.git"
+    "url": "https://github.com/Ph3n0m3n0n/Guestbook"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/michaelcheng429/meanstacktutorial/issues"
-  },
-  "homepage": "https://github.com/michaelcheng429/meanstacktutorial"
+  "author": "Ph3n0m3n0n",
+  "license": "ISC"
 }
