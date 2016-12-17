@@ -1,7 +1,8 @@
 var express = require('express');
-var mongojs = require('mongojs');
-var db = mongojs('contactlist', ['contactlist']);
 var bodyParser = require('body-parser');
+var mongojs = require('mongojs');
+var db = mongojs('MONGO_URL');
+
 
 var app = express();
 
