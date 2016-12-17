@@ -37,56 +37,13 @@ h2 {
 a {
   color: #00B7FF;
 }
-
-#wrapper {
-  padding-top: 1%;
-	padding-left: 25%;
-	position:relative;
+#mainLogo {
+	float: right;
+	height: 200px;
+	width: 75%;
 }
 
-#userList {
-   margin:0 0 40px 0;
-}
-	#userList table {
-		border-collapse:separate;
-		border-spacing:1px;
-    border-color: white;
-}
-		#userList table th {
-			font-weight:600;
-			padding:10px 20px;
-			text-align:center;
-      background:rgba(80,120,255,0.05);
-		}
-		#userList table tbody {
-			padding:0; margin:0;
-			border-collapse:collapse;
-			border-spacing:0px;
-      background:rgba(80,120,255,0.05);
-		}
-			#userList table td {
-				padding:5px 10px;
-				text-align:center;
-        background:rgba(80,120,255,0.05);
-		}
-
-#userInfo {
-	width:250px;
-	position:absolute;
-	top:0; left:0;
-}
-	#userInfo p {
-		padding:15px;
-		border:1px solid #CCC;
-		background:rgba(80,120,255,0.05);
-	}
-
-#addUser {
-  top:0; left:100px;
-}
-
-fieldset {
-  color: #25272b;
-	border:0;
-	padding:5; margin:5;
+#brandImg {
+	height: 40px;
+	width: 100px;
 }
