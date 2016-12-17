@@ -2,6 +2,18 @@ var myApp = angular.module('myApp', []);
 myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
     console.log("Hello World from controller");
 
+// myApp.service('authInterceptor', function($q) {
+//   var service = this;
+//   service.responseError = function(response) {
+//     if (response.status == 401) {
+//       window.location = "/login";
+//     }
+//     return $q.reject(response);
+//   };
+// });
+// myApp.config(['$httpProvider', function($httpProvider){
+//   $httpProvider.interceptors.push('authInterceptor');
+// }]);
 
 var refresh = function() {
   $http.get('/userlist').success(function(response) {

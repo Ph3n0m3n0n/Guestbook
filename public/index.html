@@ -11,7 +11,7 @@
 <body>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
+  <div class="container-fluid" style="display: flex;">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Guestbook++</a>
     </div>
@@ -37,7 +37,7 @@
           <td><input class="form-control" ng-model="user.email"></td>
           <td><input class="form-control" ng-model="user.message"></td>
           <td><button class="btn btn-primary" ng-click="addUser()">Add</button></td>
-          <td><button class="btn btn-success" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">Clear</button></td>
+          <td><button class="btn btn-success" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="btn btn-default" ng-click="deselect()">Clear</button></td>
         </tr>
         <tr ng-repeat="user in userlist">
           <td>{{user.name}}</td>

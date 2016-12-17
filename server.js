@@ -27,7 +27,7 @@ app.get('/userlist', function (req, res) {
 
   User.find({}, function (err, docs) {
     if (err) throw err;
-      console.log(docs);
+      // console.log(docs);
       res.json(docs);
   });
 });
@@ -76,7 +76,3 @@ app.listen(process.env.PORT || 3000);
 app.on('stormpath.ready', function () {
   console.log('Server running on port 3000. Stormpath Ready!');
 });
-
-
-
-// mongo ds119738.mlab.com:19738/the-doc-book -u docbook -p 1111
