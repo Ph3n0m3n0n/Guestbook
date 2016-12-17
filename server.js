@@ -1,22 +1,16 @@
 // The commented out console.logs are for testing purposes 
 
 var express = require('express');
-<<<<<<< HEAD
 var bodyParser = require('body-parser');
 var mongojs = require('mongojs');
 var db = mongojs('MONGO_URL');
-
-=======
 var mongojs = require('mongojs');
 var db = mongojs('userlist', ['userlist']);
 var bodyParser = require('body-parser');
 var stormpath = require('express-stormpath');
 var dotenv = require('dotenv');
->>>>>>> guest-auth
 
 var app = express();
-
-
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
