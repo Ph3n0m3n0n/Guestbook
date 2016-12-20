@@ -25,8 +25,11 @@ mongoose.connection.once('connected', function() {
   console.log("Connected to database")
 });
 
-app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.json());
+// view engine setup
+app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+
 
 app.get('/userlist', function (req, res) {
   console.log('I received a GET request');
@@ -75,6 +78,14 @@ app.put('/userlist/:id', function (req, res) {
       res.json(doc);
     }
   );
+});
+
+app.get('/login', function (req, res) {
+  res.render('/login');
+});
+
+app.get('/register', function (req, res) {
+  res.render('/register');
 });
 
 
