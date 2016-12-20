@@ -16,7 +16,7 @@ The technologies that were used to create this web application are:
 
 To clone, install and run this project, follow these steps: 
 
-    git clone git@github.com:michaelcheng429/meanstacktutorial.git
+    git clone https://github.com/Ph3n0m3n0n/Guestbook.git
 
 then install the Node modules with
 

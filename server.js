@@ -1,10 +1,10 @@
-// The commented out console.logs are for testing purposes 
 if (process.env.ENVIRONMENT !== "production") require('dotenv').config();
+
 var express = require('express');
 var app = express();
 var dotenv = require('dotenv');
 var bodyParser = require('body-parser');
-var stormpath = require('express-stormpath');
+
 // Database stuff ... =/
 var mongodb = require('mongodb');
 var mongoose = require('mongoose');
@@ -17,14 +17,6 @@ mongoose.connection.once('connected', function() {
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
-
-app.use(stormpath.init(app, {
-  website: true
-}));
-
-// app.get('/', function (req, res) {
-//   res.render('landing');
-// });
 
 app.get('/userlist', function (req, res) {
   console.log('I received a GET request');
@@ -77,6 +69,4 @@ app.put('/userlist/:id', function (req, res) {
 
 
 app.listen(process.env.PORT || 3000);
-app.on('stormpath.ready', function () {
-  console.log('Server running on port 3000. Stormpath Ready!');
-});
+  console.log('Server running on port 3000...');
